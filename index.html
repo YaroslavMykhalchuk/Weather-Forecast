@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <p class="header">CURRENT WEATHER</p>
+        <label class="search-section">
+            <input type="text" placeholder="Search" class="search-input">
+            <button class="search-button" type="submit"></button>
+        </label>
+    </header>
+    <section class="content weather-main invisible">
+        <div class="header-section">
+            <h1 class="city"></h1>
+            <p class="date"></p>
+        </div>
+        <div class="main-weather">
+            <div class="weather-img">
+                <h2 class="type-weather-header"></h2>
+                <img src="" alt="Weather Icon" class="type-weather-img">
+            </div>
+            <div class="temperature-main">
+                <p></p>
+            </div>
+            <div class="other-info">
+                <div class="other-info-header">
+                    <p>Min temperature</p>
+                    <p>Max temperature</p>
+                    <p>Wind speed (m/sec)</p>
+                </div>
+                <div class="other-info-data">
+                    <p class="min-temperature"></p>
+                    <p class="max-temperature"></p>
+                    <p class="wind-speed-main"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content hourly-weather invisible">
+        <h2 class="header-section">Hourly</h2>
+        <div class="flex-container">
+            <div class="hourly-header-block">
+                <p class="day bold"></p>
+                <p>Forecast</p>
+                <p>Temp(°C)</p>
+                <p>Wind (m/sec)</p>
+            </div>
+        </div>
+    </section>
+    <section class="content errorBlock invisible">
+        <p class="Error-section">Failed to get weather data</p>
+    </section>
+</body>
+</html>

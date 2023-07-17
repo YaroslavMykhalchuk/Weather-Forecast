@@ -1,0 +1,147 @@
+:root {
+    --main-color: #009d9d;
+    --content-size: 1200px;
+    --background: Gainsboro;
+    --header-font-size: 20px;
+    --size-small-img: 96px;
+    --gap-hourly-weather: 15px
+}
+
+body {
+    background-color: var(--background);
+    font-size: var(--header-font-size);
+}
+
+.invisible {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 15px;
+    width: var(--content-size);
+    margin: auto;
+    padding: 15px;
+}
+
+.header, .search-input {
+    font-size: var(--header-font-size);
+}
+
+.header {
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.search-input {
+    border: 0;
+    border-bottom: 3px solid var(--main-color);
+    background-color: var(--background);
+}
+
+.search-input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.search-button {
+    background-image: url("./images/search.svg");
+    background-size: cover;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 0px;
+    background-color: var(--background);
+    margin-top: 1px;
+}
+
+.content {
+    width: var(--content-size);
+    margin: auto;
+    background-color: white;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+/* Main Weather */
+
+.main-weather {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.other-info {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.type-weather-img {
+    width: 200px;
+}
+
+.type-weather-header {
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.temperature-main {
+    font-size: 66px;
+    align-self: center;
+}
+
+.other-info-header, .other-info-data {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Houlry Weather */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-header-block,
+.hourly-data-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-hourly-weather);
+    margin-bottom: 30px;
+}
+
+.hourly-header-block .day {
+    margin-bottom: calc(10px + var(--size-small-img));
+}
+
+.small-img {
+    width: var(--size-small-img);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Error section */
+
+.Error-section {
+    font-size: 50px;
+    text-align: center;
+    color: var(--main-color);
+}
